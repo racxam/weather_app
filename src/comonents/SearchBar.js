@@ -16,6 +16,9 @@ const SearchBar = () => {
       const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=metric`;
       const response = await axios.get(endpoint);
       setWeatherData(response.data);
+      console.log(response.data);
+      
+
     } catch (error) {
       setError('Error fetching weather data. Please try again.');
       setWeatherData(null);

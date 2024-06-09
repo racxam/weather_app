@@ -48,7 +48,7 @@ const App = () => {
 
 
       <SearchBar onSearch={fetchWeather} />
-      {error && <p>{error}</p>}
+      
 
     </div>
   );
