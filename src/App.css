@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+body.dark-mode .toggle-mode {
+  color: #f0f0f0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .app {
+    margin: 20px auto;
+  }
+}
+
+/* CSS for search bar */
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: calc(100% - 100px);
+  max-width: 500px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* CSS for weather card */
+.weather-card-container {
+
+
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive styles for weather card */
+@media (max-width: 768px) {
+  
+ 
+  .weather-card-container {
+
+
+    max-width: 500px;
+    width: 80%;
+
+  }
+  .typoMain{
+    font-size: 1rem;
+  }
+  
+}
